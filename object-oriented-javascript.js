@@ -25,3 +25,11 @@ const boundPrintDetails = printDetails.bind(me);
 
 boundPrintDetails();
 boundPrintFullName();
+
+const teacher = new Person("Ms", "Maru", 32);
+
+teacher.teach = function (subject) {
+    console.log(`${this.firstName} is now teaching ${subject}`);
+};
+
+teacher.teach("Maths");
